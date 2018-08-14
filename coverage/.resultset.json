@@ -1,0 +1,63 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/models/food.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/api/v1/foods_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/serializers/food_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/welcome_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1534285173
+  }
+}
