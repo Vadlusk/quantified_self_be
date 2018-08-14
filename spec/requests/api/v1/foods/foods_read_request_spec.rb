@@ -11,7 +11,7 @@ describe 'foods API' do
       expect(response.status).to eq(200)
       expect(json.length).to eq(20)
       json.each do |food|
-        expect(food).to contain_exactly(
+        expect(food.keys).to contain_exactly(
           :id,
           :name,
           :calories
