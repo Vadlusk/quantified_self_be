@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-14T17:12:38-06:00">2018-08-14T17:12:38-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-14T17:28:15-06:00">2018-08-14T17:28:15-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">36.67%</span></span>
+    (<span class="covered_percent"><span class="red">48.65%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.37
+         0.51
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>10</b> files in total.
-    <b>30</b> relevant lines. 
-    <span class="green"><b>11</b> lines covered</span> and
+    <b>37</b> relevant lines. 
+    <span class="green"><b>18</b> lines covered</span> and
     <span class="red"><b>19</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#8053fcd26dc5b21c95c5c56d664bcbe9765f8ad9" class="src_link" title="app/controllers/api/v1/foods_controller.rb">app/controllers/api/v1/foods_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>19</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
@@ -159,19 +159,19 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">44.44%</span></span>
+    (<span class="covered_percent"><span class="red">68.75%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.44
+         0.75
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>3</b> files in total.
-    <b>9</b> relevant lines. 
-    <span class="green"><b>4</b> lines covered</span> and
+    <b>16</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
     <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -191,11 +191,11 @@
       <tr>
         <td class="strong"><a href="#8053fcd26dc5b21c95c5c56d664bcbe9765f8ad9" class="src_link" title="app/controllers/api/v1/foods_controller.rb">app/controllers/api/v1/foods_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>19</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
@@ -653,8 +653,8 @@
     <h3>app/controllers/api/v1/foods_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -671,22 +671,106 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
+          <code class="ruby">  before_action :set_food, only: %i[show]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">    render json: Food.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: @food</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def set_food</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @food = Food.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    rescue ActiveRecord::RecordNotFound</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render status: 404</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>

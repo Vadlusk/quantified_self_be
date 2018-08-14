@@ -33,7 +33,7 @@ describe 'foods API' do
   context 'does not send' do
     context 'one specific food when' do
       it 'the food does not exist' do
-        get "/api/v1/foods/#{food.id}"
+        get "/api/v1/foods/#{food.id - 1}"
 
         expect(response.status).to eq(404)
       end
