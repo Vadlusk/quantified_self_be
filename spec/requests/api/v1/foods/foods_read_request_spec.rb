@@ -4,6 +4,7 @@ describe 'foods API' do
   context 'sends' do
     it 'all foods' do
       create_list(:food, 20)
+      
       get '/api/v1/foods'
 
       json = JSON.parse(response.body, symbolize_names: true)
