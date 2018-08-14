@@ -12,6 +12,16 @@
         1,
         null
       ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/api/v1/foods_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/mailers/application_mailer.rb": [
         0,
         0,
@@ -19,10 +29,6 @@
         0
       ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/application_controller.rb": [
         0,
         0
       ],
@@ -46,6 +52,6 @@
         0
       ]
     },
-    "timestamp": 1534284466
+    "timestamp": 1534284623
   }
 }
