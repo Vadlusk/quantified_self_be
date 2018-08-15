@@ -2,9 +2,9 @@ require 'rails_helper'
 
 describe 'meal foods API' do
   let(:meal) { create(:meal) }
-  let(:food) { create(:food, meal: meal) }
+  let(:food) { create(:food, meal_id: meal) }
   let(:message) { "Successfully added #{food.name} to #{meal.name}" }
-  
+
   context 'creates a meal food' do
     it 'with correct params' do
       post "/api/v1/meals/#{meal.id}/foods/#{food.id}"
