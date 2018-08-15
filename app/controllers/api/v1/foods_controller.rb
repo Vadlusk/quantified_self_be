@@ -18,11 +18,13 @@ class Api::V1::FoodsController < ApplicationController
   end
 
   def update
-    if @food.update(food_params)
+    if food_params.empty?
+      render status: 400
+    elsif @food.update(food_params)
       @food.save!
       render json: @food
     else
-      render status: 400
+      render json: @food
     end
   end
 
@@ -41,5 +43,6 @@ class Api::V1::FoodsController < ApplicationController
     def food_params
       params.require(:food).permit(:name, :calories)
     rescue ActionController::ParameterMissing
+      {}
     end
 end

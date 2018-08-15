@@ -12,6 +12,11 @@ describe 'foods API' do
       patch "/api/v1/foods/#{food.id}", params: params
 
       expect(response.status).to eq(200)
+      expect(json_response.keys).to contain_exactly(
+        :id,
+        :name,
+        :calories
+      )
       expect(Food.first.name).to eq(name)
     end
     it 'with only calories' do
@@ -20,6 +25,11 @@ describe 'foods API' do
       patch "/api/v1/foods/#{food.id}", params: params
 
       expect(response.status).to eq(200)
+      expect(json_response.keys).to contain_exactly(
+        :id,
+        :name,
+        :calories
+      )
       expect(Food.first.calories).to eq(50)
     end
     it 'with name and calories' do
@@ -29,13 +39,17 @@ describe 'foods API' do
       patch "/api/v1/foods/#{food.id}", params: params
 
       expect(response.status).to eq(200)
+      expect(json_response.keys).to contain_exactly(
+        :id,
+        :name,
+        :calories
+      )
       expect(Food.first.name).to eq(name)
       expect(Food.first.calories).to eq(50)
     end
   end
   context 'does not edit a food' do
     it 'without params' do
-      skip
       patch "/api/v1/foods/#{food.id}"
 
       expect(response.status).to eq(400)
@@ -46,7 +60,14 @@ describe 'foods API' do
 
       patch "/api/v1/foods/#{food.id}", params: params
 
-      expect(response.status).to eq(400)
+      expect(response.status).to eq(200)
+      expect(json_response.keys).to contain_exactly(
+        :id,
+        :name,
+        :calories
+      )
+      expect(food.name).to_not be_nil
+      expect(food.calories).to_not be_nil
     end
     it 'if the food does not exist' do
       params[:food][:name]     = name
