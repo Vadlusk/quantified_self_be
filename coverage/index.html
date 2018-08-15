@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-15T15:28:25-06:00">2018-08-15T15:28:25-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-15T15:32:25-06:00">2018-08-15T15:32:25-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">72.0%</span></span>
+    (<span class="covered_percent"><span class="red">73.58%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.58
+         1.55
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>10</b> files in total.
-    <b>50</b> relevant lines. 
-    <span class="green"><b>36</b> lines covered</span> and
+    <b>11</b> files in total.
+    <b>53</b> relevant lines. 
+    <span class="green"><b>39</b> lines covered</span> and
     <span class="red"><b>14</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -78,6 +78,16 @@
         <td>27</td>
         <td>0</td>
         <td>2.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bc018bbdf79a001f942ab8503cca2ad1f58244a1" class="src_link" title="app/controllers/api/v1/meals_controller.rb">app/controllers/api/v1/meals_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -163,15 +173,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.54
+         2.39
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
-    <b>2</b> files in total.
-    <b>28</b> relevant lines. 
-    <span class="green"><b>28</b> lines covered</span> and
+    <b>3</b> files in total.
+    <b>31</b> relevant lines. 
+    <span class="green"><b>31</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -196,6 +206,16 @@
         <td>27</td>
         <td>0</td>
         <td>2.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bc018bbdf79a001f942ab8503cca2ad1f58244a1" class="src_link" title="app/controllers/api/v1/meals_controller.rb">app/controllers/api/v1/meals_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -945,6 +965,55 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="bc018bbdf79a001f942ab8503cca2ad1f58244a1">
+  <div class="header">
+    <h3>app/controllers/api/v1/meals_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::MealsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: Meal.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
