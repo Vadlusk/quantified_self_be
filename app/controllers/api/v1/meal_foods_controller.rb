@@ -5,5 +5,7 @@ class Api::V1::MealFoodsController < ApplicationController
     food.meal_id = meal.id
     message      = "Successfully added #{food.name} to #{meal.name}"
     render json: { message: message }, status: 201
+  rescue ActiveRecord::RecordNotFound
+    render status: 404
   end
 end
