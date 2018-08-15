@@ -18,11 +18,12 @@ class Api::V1::FoodsController < ApplicationController
   end
 
   def update
-    @food.update(food_params)
-    @food.save!
-    render json: @food
-  rescue ActiveRecord::RecordInvalid
-    render status: 400
+    if @food.update(food_params)
+      @food.save!
+      render json: @food
+    else
+      render status: 400
+    end
   end
 
   private
