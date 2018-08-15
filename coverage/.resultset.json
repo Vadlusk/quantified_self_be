@@ -85,6 +85,10 @@
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/serializers/meal_serializer.rb": [
         1,
         1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/mailers/application_mailer.rb": [
@@ -110,6 +114,6 @@
         0
       ]
     },
-    "timestamp": 1534368974
+    "timestamp": 1534369012
   }
 }
