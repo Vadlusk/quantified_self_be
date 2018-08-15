@@ -9,7 +9,7 @@ describe 'foods API' do
       post '/api/v1/foods', params: params
 
       expect(response.status).to eq(201)
-      expect(json_response).to contain_exactly(
+      expect(json_response.keys).to contain_exactly(
         :id,
         :name,
         :calories
