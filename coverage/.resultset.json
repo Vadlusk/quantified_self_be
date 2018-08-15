@@ -73,6 +73,7 @@
       ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/models/meal.rb": [
         1,
+        1,
         null
       ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/controllers/api/v1/meals_controller.rb": [
@@ -87,7 +88,7 @@
         1,
         null,
         1,
-        1,
+        20,
         null,
         null
       ],
@@ -114,6 +115,6 @@
         0
       ]
     },
-    "timestamp": 1534369012
+    "timestamp": 1534369062
   }
 }
