@@ -1,5 +1,5 @@
 class Api::V1::FoodsController < ApplicationController
-  before_action :set_food, only: %i[show update]
+  before_action :set_food, only: %i[show update destroy]
 
   def index
     render json: Food.all
@@ -27,6 +27,7 @@ class Api::V1::FoodsController < ApplicationController
   end
 
   def destroy
+    Food.destroy(params[:id])
   end
 
   private
