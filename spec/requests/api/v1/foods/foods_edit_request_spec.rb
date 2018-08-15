@@ -12,7 +12,7 @@ describe 'foods API' do
       patch "/api/v1/foods/#{food.id}", params: params
 
       expect(response.status).to eq(200)
-      expect(food.name).to eq(name)
+      expect(Food.first.name).to eq(name)
     end
     it 'with only calories' do
       params[:food][:calories] = 50
@@ -20,7 +20,7 @@ describe 'foods API' do
       patch "/api/v1/foods/#{food.id}", params: params
 
       expect(response.status).to eq(200)
-      expect(food.name).to eq(name)
+      expect(Food.first.calories).to eq(50)
     end
     it 'with name and calories' do
       params[:food][:name]     = name
@@ -29,7 +29,8 @@ describe 'foods API' do
       patch "/api/v1/foods/#{food.id}", params: params
 
       expect(response.status).to eq(200)
-      expect(food.name).to eq(name)
+      expect(Food.first.name).to eq(name)
+      expect(Food.first.calories).to eq(50)
     end
   end
   context 'does not edit a food' do
