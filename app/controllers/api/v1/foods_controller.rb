@@ -1,5 +1,5 @@
 class Api::V1::FoodsController < ApplicationController
-  before_action :set_food, only: %i[show]
+  before_action :set_food, only: %i[show update]
 
   def index
     render json: Food.all
@@ -15,6 +15,15 @@ class Api::V1::FoodsController < ApplicationController
     render json: food, status: 201
   rescue ActiveRecord::RecordInvalid
     render status: 400
+  end
+
+  def update
+    if @food.update(food_params)
+      @food.save!
+      render json: @food
+    else
+      render status: 400
+    end
   end
 
   private
