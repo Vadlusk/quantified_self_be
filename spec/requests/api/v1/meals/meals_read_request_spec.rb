@@ -15,7 +15,7 @@ describe 'meals API' do
           :name,
           :foods
         )
-        expect(json_response[:foods]).to eq([])
+        expect(meal[:foods]).to eq([])
       end
     end
   end
