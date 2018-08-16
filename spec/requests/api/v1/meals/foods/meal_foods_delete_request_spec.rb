@@ -17,4 +17,20 @@ describe 'meal foods API' do
       expect(json_response[:message]).to eq(message)
     end
   end
+  context 'does not delete a meal food' do
+    it 'when the meal does not exist' do
+      food = create(:food, meals: [meal])
+
+      delete "/api/v1/meals/#{meal.id - 1}/foods/#{food.id}"
+
+      expect(response.status).to eq(404)
+    end
+    it 'when the food does not exist' do
+      food = create(:food, meals: [meal])
+
+      delete "/api/v1/meals/#{meal.id}/foods/#{food.id - 1}"
+
+      expect(response.status).to eq(404)
+    end
+  end
 end
