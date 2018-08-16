@@ -28,3 +28,4 @@
 !.elasticbeanstalk/*.global.yml
 
 coverage
+db/schema.rb
