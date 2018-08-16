@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'meal foods API' do
   let(:meal) { create(:meal) }
-  let(:food) { create(:food, meals: [meal]) }
+  let(:food) { create(:food) }
   let(:message) { "Successfully added #{food.name} to #{meal.name}" }
 
   context 'creates a meal food' do
@@ -11,6 +11,7 @@ describe 'meal foods API' do
 
       expect(response.status).to eq(201)
       expect(json_response[:message]).to eq(message)
+      expect(meal.foods.first.name).to eq(food.name)
     end
   end
   context 'does not create a meal food' do
