@@ -100,15 +100,15 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
         null,
         1,
-        0,
+        2,
         null,
-        0,
+        1,
         null,
         null
       ],
@@ -117,8 +117,6 @@
         1,
         null,
         1,
-        20,
-        null,
         null
       ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/mailers/application_mailer.rb": [
@@ -144,6 +142,6 @@
         0
       ]
     },
-    "timestamp": 1534409880
+    "timestamp": 1534414065
   }
 }
