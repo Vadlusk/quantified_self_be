@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'meal foods API' do
   let(:meal) { create(:meal) }
-  let(:food) { create(:food, meal_id: meal) }
+  let(:food) { create(:food, meals: [meal]) }
   let(:message) { "Successfully added #{food.name} to #{meal.name}" }
 
   context 'creates a meal food' do

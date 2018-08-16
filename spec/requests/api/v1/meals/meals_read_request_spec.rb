@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'meals API' do
-  let(:meal) { create(:meal_with_foods) }
+  let(:meal) { create(:meal) }
   context 'sends' do
     it 'all meals' do
       create_list(:meal, 20)
@@ -28,13 +28,6 @@ describe 'meals API' do
         :name,
         :foods
       )
-      json_response[:foods].each do |food|
-        expect(food.keys).to contain_exactly(
-          :id,
-          :name,
-          :calories
-        )
-      end
     end
   end
   context 'does not send' do

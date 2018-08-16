@@ -4,7 +4,7 @@ abort('The Rails env is running in production mode!') if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
 require 'simplecov'
-SimpleCov.start 'rails'
+SimpleCov.start
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
