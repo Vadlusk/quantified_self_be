@@ -8,7 +8,7 @@ class Api::V1::MealFoodsController < ApplicationController
   end
 
   def destroy
-    meal_food = @food.meal_foods.where(meal_id: params[:meal_id])
+    meal_food = @meal.meal_foods.where(food_id: params[:id])
     meal_food.first.destroy
     message = "Successfully removed #{@food.name} from #{@meal.name}"
     render json: { message: message }, status: 200

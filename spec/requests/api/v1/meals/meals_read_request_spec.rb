@@ -28,13 +28,6 @@ describe 'meals API' do
         :name,
         :foods
       )
-      json_response[:foods].each do |food|
-        expect(food.keys).to contain_exactly(
-          :id,
-          :name,
-          :calories
-        )
-      end
     end
   end
   context 'does not send' do
