@@ -4,7 +4,7 @@ describe 'meal foods API' do
   let(:meal) { create(:meal_with_foods) }
   let(:food) { meal.foods.first }
   let(:message) { "Successfully removed #{food.name} from #{meal.name}" }
-  
+
   context 'deletes a meal food' do
     it 'with correct params' do
       expect(meal.foods.length).to eq(5)

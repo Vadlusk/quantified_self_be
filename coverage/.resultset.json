@@ -5,6 +5,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/vadlusk/turing/4module/projects/quantified_self_be/app/models/application_record.rb": [
@@ -99,15 +100,15 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
         null,
         1,
-        2,
+        0,
         null,
-        1,
+        0,
         null,
         null
       ],
@@ -116,7 +117,7 @@
         1,
         null,
         1,
-        21,
+        20,
         null,
         null
       ],
@@ -143,6 +144,6 @@
         0
       ]
     },
-    "timestamp": 1534409259
+    "timestamp": 1534409880
   }
 }

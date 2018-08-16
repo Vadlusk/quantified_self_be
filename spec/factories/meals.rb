@@ -9,7 +9,7 @@ FactoryBot.define do
       after(:create) do |meal, evaluator|
         create_list(:food,
                     evaluator.food_count,
-                    meal_id: meal)
+                    meal: meal)
       end
     end
   end
