@@ -13,5 +13,7 @@ class Api::V1::MealsController < ApplicationController
 
     def set_meal
       @meal = Meal.find(params[:meal_id])
+    rescue ActiveRecord::RecordNotFound
+      render status: 404
     end
 end
