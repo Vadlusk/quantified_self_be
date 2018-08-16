@@ -3,8 +3,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :foods, except: %i[new edit]
       resources :meals, only: %i[index] do
-        get  '/foods',       to: 'meals#show'
-        post '/foods(/:id)', to: 'meal_foods#create'
+        get  '/foods',         to: 'meals#show'
+        post '/foods(/:id)',   to: 'meal_foods#create'
+        delete '/foods(/:id)', to: 'meal_foods#destroy'
       end
     end
   end

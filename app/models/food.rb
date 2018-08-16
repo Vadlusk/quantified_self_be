@@ -1,5 +1,6 @@
 class Food < ApplicationRecord
   validates :name, presence: true
   validates :calories, presence: true
-  belongs_to :meal, optional: true
+  has_many :meal_foods
+  has_many :meals, through: :meal_foods
 end

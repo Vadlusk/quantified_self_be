@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'meals API' do
-  let(:meal) { create(:meal_with_foods) }
+  let(:meal) { create(:meal) }
   context 'sends' do
     it 'all meals' do
       create_list(:meal, 20)
