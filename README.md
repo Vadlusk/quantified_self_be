@@ -3,7 +3,7 @@ is a project designed to teach how seperate backend and frontend applications in
 The application's functionality is that of a basic calorie counter.  The user can add foods to a list and then add foods from that list to any of four meals.  Each food is assigned a number of calories which is subtracted from remaining calories for each meal and for the day (all meals added together).
 
 # Versions
-Ruby 2.4.4
+Ruby 2.4.4   
 Rails 5.2.1
 
 
@@ -13,14 +13,14 @@ Rails 5.2.1
 3. `Bundle`
 4. `rake db:create db:schema:load db:seed`
 
-To run the test suite, type `rspec`. 
+To run the test suite, type `rspec`.   
 To spin up a local server, type `rails s`.
 
 # Endpoints
 
 ## Foods
-The following endpoints return either a food object or message that the action was successful.
-Food objects are returned in the following format: 
+The following endpoints return either a food object or message that the action was successful.  
+Food objects are returned in the following format:   
   { "id": integer, "name": string, "calories": integer }
 
 GET /api/v1/foods
@@ -45,8 +45,8 @@ DELETE /api/v1/foods/:id
 deletes the food with that id number
 
 ## Meals
-The following endpoints return either a meal object or message that the action was successful.
-Meal objects are returned in the following format: 
+The following endpoints return either a meal object or message that the action was successful.  
+Meal objects are returned in the following format:   
   { "id": integer "name": string, "foods": array_of_food_objects }
 
 GET /api/v1/meals
