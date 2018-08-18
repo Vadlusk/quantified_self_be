@@ -33,12 +33,13 @@ returns the food with that id number
 
 POST /api/v1/foods
 
-creates a food with paramaters: { "food": { "name": "Name of food here", "calories": "Calories here"} }
+creates a food with paramaters: { "food": { "name": "Name of food here", "calories": "Calories here"} }    
 all fields are required
 
 PATCH /api/v1/foods/:id
 
-edits an existing food with same parameters as above. no fields are required. 
+edits an existing food with same parameters as above.   
+no fields are required. 
 
 DELETE /api/v1/foods/:id
 
